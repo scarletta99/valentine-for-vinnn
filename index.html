@@ -1,14 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine? 💕</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-background" id="heartsBackground"></div>
+
+    <!-- Start Screen -->
+    <section id="startSection" class="section active">
+      <div class="start-content">
+        <h1 class="start-title">💕 A Special Message For You 💕</h1>
+        <p class="start-subtitle">Click below to begin our journey...</p>
+        <button id="startBtn" class="start-button">
+          <span class="button-icon">🎵</span>
+          Start
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 1: Heart Chaser Game -->
+    <section id="gameSection" class="section">
+      <div class="container">
+        <div class="game-container">
+          <h2 class="section-title">Catch My Heart! 💗</h2>
+          <p class="game-instructions">Move the hook to catch the heart!</p>
+
+          <div class="game-area">
+            <!-- Hook/Claw -->
+            <div class="hook-container" id="hookContainer">
+              <div class="hook-cable"></div>
+              <div class="hook-claw">
+                <div class="claw-left"></div>
+                <div class="claw-right"></div>
+              </div>
+            </div>
+
+            <!-- Moving Hearts -->
+            <div class="moving-heart" id="movingHeart">❤️</div>
+          </div>
+
+          <div class="game-controls">
+            <button class="game-btn" id="leftBtn">
+              <span class="btn-arrow">⬅️</span> Left
+            </button>
+            <button class="game-btn seize-btn" id="seizeBtn">
+              💘 Seize My Heart!
+            </button>
+            <button class="game-btn" id="rightBtn">
+              Right <span class="btn-arrow">➡️</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: The Letter -->
+    <section id="letterSection" class="section">
+      <div class="container">
+        <div class="envelope-container">
+          <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+            <div class="envelope-seal">💕</div>
+          </div>
+
+          <div class="letter-paper" id="letterPaper">
+            <div class="letter-content">
+              <h2 class="letter-header">My Dearest Valentine,</h2>
+
+              <div class="letter-text">
+                <p>To: mas mas bandung favorit kuu💗</p>
+                <p>From : manusia kecil yang tingginya ga nyampe 150 (kurang 1cm doang btw)😙</p>
+                <p>
+                  hihiii happy Valentine’s Day, babe🤍
+
+Happy Valentine’s Day to the person who owns my heart, even from miles apart. yes you. mas mas bandung favoritku😋
+                </p>
+
+                <p>
+                  I just want you to know how incredibly proud I am of you. you’ve been giving your best even when things get tough, and that’s one of the many reasons I love you sooo muchh
+                </p>
+
+                <p>
+                  but seriously out of all the people in this world, how can I end up loving you this much hm? hmm this has to be destiny and my secret prayers being answered by god🤔
+                  eh atau… jangan jangan kamu pakai pelet yah om? jujur ga👺
+                  hehe😋
+                </p>
+
+                <p>
+                  being with you it's always feels like home. safe. warm. and annoying sometimes because you love to keep teasing me🗿, but it still feels like home. even when you bully me for fun, I still choose you. because behind that act, you have the softesttt heart, the most sincere way of caring, and the strength in u that i truly admire the mosttt💗
+                </p>
+
+                <p>
+                  i love the way you listen to my random nonsense stories
+                  i love the way you’re always there for me
+                  i love how you notice the smallest changes in me
+                  i love how you remember little things about me 
+                  and i love how you make me laugh, especially on my most exhausting days
+                </p>
+
+                <p>
+                  i also love when you tell me about your day, your thoughts, your struggles, your random ideas. it makes me feel trusted. it makes me feel close to you. and even though distance keeps us apart, my heart has never left your side. not once. never
+                </p>
+
+                <p>
+                  on your special day and honestly every day, i hope you take a little break and remember that you are soooo loved. not just by the people around you, but especially by meee. i wish i could be there to hug youuu for sooo longg, see your smile, and hear your voice directly (and maybe bite your hands a little too hehe😋🤏🏻) 
+                </p>
+
+                <p>
+                  if one day I become extra sensitive, dramatic, overthinking, or lagi banyak maunya, please remember behind all that is just a girl who loves you soo sooo much and is scared of losing you😕
+                </p>
+
+                <p>
+                  thank you for staying here with me
+thank you for choosing me too! 
+thank you for loving me in your own way
+                </p>
+
+                <p>i hope we always hold on to each other, not let go 
+                  i hope we keep choosing each other, even on the days that aren’t sweet or easy</p>
+                <p>
+                  happy valentine’s day, my love💗
+keep stay being you  the soft you, the silly you, the hardworking you. that’s the version of you I adore the most💕
+                </p>
+              </div>
+
+              <div class="letter-signature">
+                <p>i love you forever babe💗 <br> with all my love,</p>
+                <p class="signature-name">vinnn 💗</p>
+              </div>
+
+              <button class="continue-btn" id="continueToProposal">
+                Continue 💝
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: The Proposal -->
+    <section id="proposalSection" class="section">
+      <div class="container">
+        <div class="proposal-container">
+          <h2 class="proposal-title">Will You Be My Valentine? 💕</h2>
+
+          <div class="proposal-buttons">
+            <button class="proposal-btn yes-btn" id="yesBtn">Yes! 💖</button>
+            <button class="proposal-btn no-btn" id="noBtn">No</button>
+          </div>
+
+          <div class="celebration-message" id="celebrationMessage">
+            <h1 class="celebration-title">🎉 YES! 🎉</h1>
+            <p class="celebration-text">
+              You've made me the happiest person alive!
+            </p>
+            <div class="celebration-hearts">
+              <img src="assets/gif1.gif" alt="Sticker" class="sticker-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Toggle -->
+    <div class="music-control">
+      <button id="musicToggle" class="music-btn">
+        <span id="musicIcon">🔊</span>
+      </button>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="bgMusic" loop>
+      <source src="assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
